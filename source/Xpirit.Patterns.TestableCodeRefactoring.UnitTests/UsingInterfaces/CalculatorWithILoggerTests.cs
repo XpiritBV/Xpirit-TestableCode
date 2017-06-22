@@ -1,5 +1,4 @@
-﻿using FakeItEasy;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Xpirit.Patterns.TestableCodeRefactoring.UsingInterfaces;
 using NUnit.Framework;
 

@@ -154,8 +154,10 @@
     <Compile Include="UsingMockFramework\CalculatorWithMockFrameworkTests.cs" />
     <Compile Include="UsingMockFramework\RegistrationServiceTests.cs" />
     <Compile Include="UsingMockFramework\UserRepositoryFactory.cs" />
-    <Compile Include="UsingSitecore\FakeDbFactory.cs" />
-    <Compile Include="UsingSitecore\NewsItemServiceTests.cs" />
+    <Compile Include="UsingSitecore\FakeDB\FakeDbFactory.cs" />
+    <Compile Include="UsingSitecore\FakeDB\NewsItemServiceTests.cs" />
+    <Compile Include="UsingSitecore\Sitecore82\FakeSitecoreItemFactory.cs" />
+    <Compile Include="UsingSitecore\Sitecore82\NewsItemServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

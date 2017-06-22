@@ -59,7 +59,8 @@
     <Compile Include="UsingMockFramework\UserAddedEventArgs.cs" />
     <Compile Include="UsingMockFramework\UserRepository.cs" />
     <Compile Include="UsingMockFramework\RegistrationService.cs" />
-    <Compile Include="UsingSitecore\NewsItemService.cs" />
+    <Compile Include="UsingSitecore\FakeDB\NewsItemService.cs" />
+    <Compile Include="UsingSitecore\Sitecore8.2\NewsItemService.cs" />
     <Compile Include="UsingSitecore\Templates.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using Xpirit.Patterns.TestableCodeRefactoring.UsingSitecore;
 using NUnit.Framework;
+using Xpirit.Patterns.TestableCodeRefactoring.UsingSitecore.FakeDB;
 
-namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore
+namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore.FakeDB
 {
     [TestFixture]
     public class NewsItemServiceTests
