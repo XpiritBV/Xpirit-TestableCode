@@ -40,6 +40,7 @@ namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore
         }
 
         [Test]
+        [Category("Requires Sitecore license")]
         public void GetNewsItems_WithValidNewsRootAndNewsItems_ReturnsNewsItems()
         {
             // Arrange
