@@ -8,7 +8,6 @@ namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore.Siteco
     public class NewsItemServiceTests
     {
         [Test]
-        [Category("Requires Sitecore license")]
         public void GetNewsItems_WithInvalidNewsRoot_ReturnsEmptyList()
         {
             // Arrange
@@ -25,7 +24,6 @@ namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore.Siteco
         }
 
         [Test]
-        [Category("Requires Sitecore license")]
         public void GetNewsItems_WithValidNewsRootAndNoNewsItems_ReturnsEmptyList()
         {
             // Arrange
@@ -43,7 +41,6 @@ namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore.Siteco
         }
 
         [Test]
-        [Category("Requires Sitecore license")]
         [Ignore("Because factory method for fake Database is not working as expected.")]
         public void GetNewsItems_WithValidNewsRootAndNewsItems_ReturnsNewsItems()
         {

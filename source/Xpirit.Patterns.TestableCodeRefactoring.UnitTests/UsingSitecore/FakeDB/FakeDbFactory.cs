@@ -1,9 +1,9 @@
 ﻿using Moq;
-using Xpirit.Patterns.TestableCodeRefactoring.UsingSitecore;
 using Sitecore.Data;
 using Sitecore.FakeDb;
+using Xpirit.Patterns.TestableCodeRefactoring.UsingSitecore;
 
-namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore
+namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingSitecore.FakeDB
 {
     public static class FakeDbFactory
     {
