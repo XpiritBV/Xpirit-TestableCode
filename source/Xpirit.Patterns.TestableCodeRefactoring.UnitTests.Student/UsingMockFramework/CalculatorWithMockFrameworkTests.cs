@@ -7,4 +7,8 @@ using Xpirit.Patterns.TestableCodeRefactoring.UnitTests.Student.UsingInterfaces;
 
 namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.Student.UsingMockFramework
 {
+    [TestFixture]
+    public class CalculatorWithMockFrameworkTests
+    {
+    }
 }

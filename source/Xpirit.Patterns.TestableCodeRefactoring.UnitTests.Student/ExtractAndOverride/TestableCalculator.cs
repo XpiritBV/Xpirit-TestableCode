@@ -2,4 +2,7 @@
 
 namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.Student.ExtractAndOverride
 {
+    public class TestableCalculator
+    {
+    }
 }

@@ -7,4 +7,8 @@ using NUnit.Framework;
 
 namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.Student.UsingMockFramework
 {
+    [TestFixture]
+    public class RegistrationServiceTests
+    {
+    }
 }

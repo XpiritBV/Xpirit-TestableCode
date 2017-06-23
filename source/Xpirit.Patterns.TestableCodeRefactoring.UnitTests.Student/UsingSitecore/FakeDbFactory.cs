@@ -5,4 +5,7 @@ using Sitecore.FakeDb;
 
 namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.Student.UsingSitecore
 {
+    public static class FakeDbFactory
+    {
+    }
 }

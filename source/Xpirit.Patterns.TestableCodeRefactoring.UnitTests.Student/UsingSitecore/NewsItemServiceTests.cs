@@ -4,4 +4,8 @@ using NUnit.Framework;
 
 namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.Student.UsingSitecore
 {
+    [TestFixture]
+    public class NewsItemServiceTests
+    {
+    }
 }

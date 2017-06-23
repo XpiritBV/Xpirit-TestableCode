@@ -5,4 +5,9 @@ using NUnit.Framework;
 
 namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.Student.UsingInterfaces
 {
+    [TestFixture]
+    public class CalculatorWithILoggerTests
+    {
+
+    }
 }
