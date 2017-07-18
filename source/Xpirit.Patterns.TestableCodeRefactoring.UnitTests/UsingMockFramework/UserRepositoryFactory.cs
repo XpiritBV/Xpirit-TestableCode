@@ -31,6 +31,19 @@ namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingMockFramework
             return userRepositoryMock.Object;
         }
 
+        public static Mock<IUserRepository> CreateMockWithUnknownUser()
+        {
+            var userRepositoryMock = new Mock<IUserRepository>();
+            userRepositoryMock.Setup(mock => mock.IsKnownUser(It.IsAny<string>())).Returns(false);
+            userRepositoryMock.Setup(mock => mock.Add(
+                    It.IsAny<string>(),
+                    It.IsAny<string>(),
+                    It.IsAny<DateTime>()))
+                .Returns(GetNewUser);
+
+            return userRepositoryMock;
+        }
+
         private static NewUser GetNewUser()
         {
             return new NewUser(

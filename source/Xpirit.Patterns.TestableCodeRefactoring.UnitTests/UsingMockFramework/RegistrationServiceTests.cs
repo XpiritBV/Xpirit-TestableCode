@@ -44,6 +44,26 @@ namespace Xpirit.Patterns.TestableCodeRefactoring.UnitTests.UsingMockFramework
             result.Should().BeOfType<NewUser>();
         }
 
+        [Test]
+        public void RegisterUser_WithUnknownUser_AddGetsCalledOnce()
+        {
+            // Arrange
+            Mock<IUserRepository> userRepositoryMock = UserRepositoryMockFactory.CreateMockWithUnknownUser();
+            var registrationService = GetRegistrationService(userRepositoryMock.Object);
+
+            // Act
+            var result = registrationService.RegisterUser(
+                name: It.IsAny<string>(),
+                email: It.IsAny<string>(),
+                dateOfBirth: It.IsAny<DateTime>());
+
+            // Assert
+            userRepositoryMock.Verify(mock => mock.Add(
+                It.IsAny<string>(),
+                It.IsAny<string>(),
+                It.IsAny<DateTime>()), Times.Once);
+        }
+
         private static RegistrationService GetRegistrationService(IUserRepository userRepository)
         {
             return new RegistrationService(userRepository);
